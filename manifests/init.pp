@@ -8,7 +8,7 @@ class hubflow {
     before => Package['boxen/brews/hub-flow']
   }
 
-  package { 'boxen/brws/hib-flow':
+  package { 'boxen/brews/hub-flow':
     ensure => $version,
   }
 
