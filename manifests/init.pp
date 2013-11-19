@@ -1,4 +1,16 @@
-# This is a placeholder class.
-class template {
-  anchor { 'Hello_World': }
+#This class ensures we have hubflow installed
+class hubflow {
+  include homebrew
+
+  $version = '1.5.2'
+
+  homebrew::formula { 'hub-flow':
+    before => Package['boxen/brews/hub-flow']
+  }
+
+  package { 'boxen/brws/hib-flow':
+    ensure => $version,
+  }
+
+
 }
