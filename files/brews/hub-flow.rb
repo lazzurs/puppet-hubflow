@@ -12,7 +12,7 @@ class HubFlow < Formula
   conflicts_with 'git-flow-avh'
 
   def install
-    system "INSTALL_INTO=#{prefix}", "install.sh", "install"
+    system "INSTALL_INTO=#{prefix}", "./install.sh", "install"
 
   end
 end
