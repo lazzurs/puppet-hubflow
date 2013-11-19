@@ -5,10 +5,10 @@ class hubflow {
   $version = '1.5.2'
 
   homebrew::formula { 'hub-flow':
-    before => Package['boxen/brews/hub-flow']
+    before => Package['hubflow']
   }
 
-  package { 'boxen/brews/hub-flow':
+  package { 'hubflow':
     ensure => $version,
   }
 
