@@ -10,7 +10,10 @@ describe 'hubflow' do
     }
   end
 
-
-
   it { should include_class('homebrew') }
+
+  should contain_homebrew__formula('hub-flow')
+
+  should contain_package('hubflow').with_ensure('1.5.2')
+
 end
